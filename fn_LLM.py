@@ -92,8 +92,3 @@ class DeepseekLLM():
         except Exception as e:
             return e
 
-if __name__ == '__main__':
-    llm = QwenLLM()
-    query = "如何做西红柿炒鸡蛋？"
-    llm.call_with_prompt(query)
-
