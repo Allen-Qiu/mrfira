@@ -318,20 +318,3 @@ class DynamicNoisyHardGatingModule(nn.Module):
         hard_gate = (mask - soft_prob).detach() + soft_prob
 
         return input_feat * hard_gate.unsqueeze(-1)
-
-
-if __name__ == '__main__':
-    # checkpoint = encoder = '/root/autodl-tmp/bge-m3'
-    # encoder = TextEncoder(checkpoint)
-    # query = ["hello world"]
-    # qvec = encoder.get_embedding(query)
-    #
-    # sentences = ["What is BGE M3?", "Defination of BM25"]
-    # pvecs = encoder.get_embedding(sentences)
-    #
-    # model = SearchModule(3, 5, qvec.shape[0])
-    # res  = model(qvec, pvecs[0])
-    # print(res.shape)
-    # print(res)
-
-    pass
