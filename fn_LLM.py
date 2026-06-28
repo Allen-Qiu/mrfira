@@ -7,7 +7,7 @@ from openai import OpenAI
 
 class QwenLLM():
     def __init__(self):
-        dashscope.api_key = "sk-eef86351972e4953a62692d9fd08b429"
+        dashscope.api_key = "XXX"
         self.model = dashscope.Generation.Models.qwen_max
         # self.model = "qwen_plus"
 
@@ -61,7 +61,7 @@ class QwenLLM():
 
 class DeepseekLLM():
     def __init__(self):
-        self.key = "sk-acd94787882a46629a1810301ef0b608"
+        self.key = "XXX"
 
     def call_with_prompt(self, prompt, temp=0.2):
         client = OpenAI(api_key=self.key, base_url="https://api.deepseek.com")
