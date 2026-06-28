@@ -1,5 +1,5 @@
 """
-搜索模块，计算query和passage多向量检索的相似度
+重排序模块，计算query和passage多向量检索的相似度
 """
 import torch
 import torch.nn as nn
